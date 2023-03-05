@@ -7,7 +7,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #FAD961;
 background-image: linear-gradient(90deg, #000046 0%, #1CB5E0 100%);
 
 
@@ -53,7 +52,6 @@ background-image: linear-gradient(90deg, #000046 0%, #1CB5E0 100%);
 .navbar-links li:hover {
     border-color: #6CB4EE;
     color:white;
-    /* box-shadow: 0 0.5em 0.5em -0.4em #00FFFF; */
     cursor: pointer;
     transform: translateY(-0.25em);
     transition: color 0.25s, border-color 0.25s,box-shadow 0.25s,transform 0.25s;
@@ -128,16 +126,16 @@ background-image: linear-gradient(90deg, #000046 0%, #1CB5E0 100%);
 .panel {
   background-color: white;
   border-radius: 10px;
-  /* padding: 15px 25px; */
-  width: 100%;
+  width: inherit;
   max-width: 1000px;
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   text-align: center;
   text-transform: uppercase;
   padding-right: 4%;
   position:relative;
   margin-left: 15%;
+  margin-right: 15%;
   transform: translateY(-40%);
 
 }
@@ -165,7 +163,7 @@ background-image: linear-gradient(90deg, #000046 0%, #1CB5E0 100%);
 
 
 
-@media(max-width:900px) {
+@media screen and (max-width:600px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -242,6 +240,11 @@ background-image: linear-gradient(90deg, #000046 0%, #1CB5E0 100%);
         font-size: 30rem;
     }
 
-
+@media  screen and (max-width:600px) {
+    .panel{
+        flex-direction: column;
+    }
+    
+}
   
   
